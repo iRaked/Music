@@ -3,7 +3,7 @@
   "cleanUrls": true,
   "headers": [
     {
-      "source": "/assets/audio3/(.*).mp3",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Content-Type",
@@ -12,6 +12,10 @@
         {
           "key": "Access-Control-Allow-Origin",
           "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
         },
         {
           "key": "Cache-Control",
